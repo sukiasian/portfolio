@@ -1,0 +1,12 @@
+.header { 
+	&__quote { 
+		background-color: $color-darker;
+		padding: 1rem;
+		width: 100;
+	}
+
+	&__info {
+		background-color: $color-darker;
+		margin-top: 1rem;
+	}
+}
