@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
-import ImageCarousel from "../../../../components/ImageCarousel/ImageCarousel";
+import ImageCarousel from "../../../components/ImageCarousel/ImageCarousel";
 import SkillsBar from "../SkillsBar/SkillsBar";
-import login from '../../../../assets/images/projects/spaceboo/login.png';
-import provide from '../../../../assets/images/projects/spaceboo/provide.png';
-import search from '../../../../assets/images/projects/spaceboo/search.png';
-import contact from '../../../../assets/images/projects/spaceboo/contact.png';
-import email from '../../../../assets/images/projects/spaceboo/confirm-email.png';
-import home from '../../../../assets/images/projects/spaceboo/home.png';
-import space from '../../../../assets/images/projects/spaceboo/space.png';
+import login from '../../../assets/images/projects/spaceboo/login.png';
+import provide from '../../../assets/images/projects/spaceboo/provide.png';
+import search from '../../../assets/images/projects/spaceboo/search.png';
+import contact from '../../../assets/images/projects/spaceboo/contact.png';
+import email from '../../../assets/images/projects/spaceboo/confirm-email.png';
+import home from '../../../assets/images/projects/spaceboo/home.png';
+import space from '../../../assets/images/projects/spaceboo/space.png';
 
 const skills = [
 	'Node.js', 

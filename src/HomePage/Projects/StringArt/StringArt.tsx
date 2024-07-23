@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import SkillsBar from "../SkillsBar/SkillsBar";
-import { Canvas } from "./Canvas";
+import Canvas from "./Canvas";
 
 const skills = ['Python', 'Flask', 'ReactJS', 'NumPy', 'AI API'];
 

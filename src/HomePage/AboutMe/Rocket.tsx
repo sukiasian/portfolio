@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ReactNode, useEffect, useRef } from "react";
-import rocket from '../../../assets/images/rocket.png';
+import rocket from '../../assets/images/rocket.png';
 
 export default function Rocket(): ReactNode { 
 	const rocketRef = useRef<HTMLImageElement>(null);

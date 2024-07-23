@@ -1,9 +1,9 @@
 import { MouseEventHandler, ReactNode, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setActiveTabIndex } from '../../../../redux/actions/stackCarouselActions';
+import { setActiveTabIndex } from '../../../redux/actions/stackCarouselActions';
 import FrontendSection from './FrontendSection';
 import BackendSection from './BackendSection';
-import { type ReduxState } from '../../../../redux/reducers/rootReducer';
+import { type ReduxState } from '../../../redux/reducers/rootReducer';
 
 export default function StackCarousel(): ReactNode {
     const developmentSections = ['Backend', 'Frontend'];

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { useSelector } from "react-redux";
-import { ReduxState } from "../../../redux/reducers/rootReducer";
+import { ReduxState } from "../../redux/reducers/rootReducer";
 
 export default function Briefly(): ReactNode { 
 	const { briefAboutWindowIsOpen } = useSelector((state: ReduxState) => state.windowStorage);

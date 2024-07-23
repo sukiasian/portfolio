@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import { ReactNode } from 'react';
-import { type ReduxState } from '../../../../redux/reducers/rootReducer';
-import { StackTab } from '../../../../../types/enums';
-import react from '../../../../assets/images/stack/frontend/react.svg';
-import sass from '../../../../assets/images/stack/frontend/sass.svg';
-import next from '../../../../assets/images/stack/frontend/nextjs.svg';
+import { type ReduxState } from '../../../redux/reducers/rootReducer';
+import { StackTab } from '../../../../types/enums';
+import react from '../../../assets/images/stack/frontend/react.svg';
+import sass from '../../../assets/images/stack/frontend/sass.svg';
+import next from '../../../assets/images/stack/frontend/nextjs.svg';
 
 export default function FrontendSection(): ReactNode  {
     const { activeTab } = useSelector((state: ReduxState) => state.stackCarouselReducer);

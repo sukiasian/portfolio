@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { useSelector } from "react-redux";
-import { ReduxState } from "../../../redux/reducers/rootReducer";
+import { ReduxState } from "../../redux/reducers/rootReducer";
 
 export default function Extensively(): ReactNode { 
 	const { extensiveAboutWindowIsOpen } = useSelector((state: ReduxState) => state.windowStorage);

@@ -1,18 +1,18 @@
 import Image from 'next/image';
 import { ReactNode } from 'react';
 import { useSelector } from 'react-redux';
-import { type ReduxState } from '../../../../redux/reducers/rootReducer';
-import { StackTab } from '../../../../../types/enums';
-import node from '../../../../assets/images/stack/backend/node-js.svg';
-import python from  '../../../../assets/images/stack/backend/python.svg';
-import spring from '../../../../assets/images/stack/backend/spring.svg';
-import postgresql from '../../../../assets/images/stack/backend/postgresql.svg';
-import mongodb from '../../../../assets/images/stack/backend/mongodb.svg';
-import redis from '../../../../assets/images/stack/backend/redis.svg';
-import kafka from '../../../../assets/images/stack/backend/kafka.svg';
-import java from '../../../../assets/images/stack/backend/java.svg';
-import nestjs from '../../../../assets/images/stack/backend/nestjs.svg';
-import docker from '../../../../assets/images/stack/backend/docker.svg';
+import { type ReduxState } from '../../../redux/reducers/rootReducer';
+import { StackTab } from '../../../../types/enums';
+import node from '../../../assets/images/stack/backend/node-js.svg';
+import python from  '../../../assets/images/stack/backend/python.svg';
+import spring from '../../../assets/images/stack/backend/spring.svg';
+import postgresql from '../../../assets/images/stack/backend/postgresql.svg';
+import mongodb from '../../../assets/images/stack/backend/mongodb.svg';
+import redis from '../../../assets/images/stack/backend/redis.svg';
+import kafka from '../../../assets/images/stack/backend/kafka.svg';
+import java from '../../../assets/images/stack/backend/java.svg';
+import nestjs from '../../../assets/images/stack/backend/nestjs.svg';
+import docker from '../../../assets/images/stack/backend/docker.svg';
 
 export default function BackendSection(): ReactNode  {
     const { activeTab } = useSelector((state: ReduxState) => state.stackCarouselReducer);

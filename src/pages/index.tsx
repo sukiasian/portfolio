@@ -1,6 +1,6 @@
-import AboutMe from "./home/AboutMe/AboutMe";
-import Projects from "./home/Projects/Projects";
-import Technologies from "./home/Technologies/Technologies";
+import AboutMe from "../HomePage/AboutMe/AboutMe";
+import Projects from "../HomePage/Projects/Projects";
+import Technologies from "../HomePage/Technologies/Technologies";
 
 
 export default function Home() {

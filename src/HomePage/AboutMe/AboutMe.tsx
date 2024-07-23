@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
-import Button from "../../../components/Button/Button";
+import Button from "../../components/Button/Button";
 import Rocket from "./Rocket";
 import Briefly from "./Briefly";
 import Extensively from "./Extensively";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleBriefAboutWindow, toggleExtenciveAboutWindow } from "../../../redux/actions/windowActions";
-import { ReduxState } from "../../../redux/reducers/rootReducer";
+import { toggleBriefAboutWindow, toggleExtenciveAboutWindow } from "../../redux/actions/windowActions";
+import { ReduxState } from "../../redux/reducers/rootReducer";
 
 export default function AboutMe(): ReactNode { 
 	const { briefAboutWindowIsOpen, extensiveAboutWindowIsOpen } = useSelector((state: ReduxState) => state.windowStorage);

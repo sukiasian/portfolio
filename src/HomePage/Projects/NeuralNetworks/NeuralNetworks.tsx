@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import LinkWithIcon from "../../../../components/Link/LinkWithIcon";
+import LinkWithIcon from "../../../components/Link/LinkWithIcon";
 import SkillsBar from "../SkillsBar/SkillsBar";
 
 const skills = [
@@ -11,7 +11,9 @@ const skills = [
 	'Transferable models',
 ];
 
+
 export default function NeuralNetworks(): ReactNode { 
+
 	return <div className="project projects__nn">
 		<h2 className="heading heading--secondary">NEURAL NETWORKS: FACIAL EXPRESSION RECOGNITION</h2>
 			

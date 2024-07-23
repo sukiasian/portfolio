@@ -5,7 +5,7 @@ interface SkillsBarProps {
 }
 
 
-export default function SkillsBar({ skills }: SkillsBarProps): ReactNode { 
+export default function SkillsBar({ skills = [] }: SkillsBarProps): ReactNode { 
 	const renderSkills = useCallback(() => { 
 		return skills.map((skill, i) => {
 			return <div key={i} className="skill">{skill}</div>;

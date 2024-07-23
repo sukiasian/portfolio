@@ -1,13 +1,13 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { ReactNode, useLayoutEffect, useRef, useState } from "react";
 import { useEffect } from "react";
-import Button from "../../../../components/Button/Button";
-import LinkWithIcon from "../../../../components/Link/LinkWithIcon";
+import Button from "../../../components/Button/Button";
+import LinkWithIcon from "../../../components/Link/LinkWithIcon";
 
 interface CanvasProps {
     pinsAmount: number;
 }
 
-export const Canvas = ({ pinsAmount }: CanvasProps): JSX.Element => {
+export default function Canvas({ pinsAmount }: CanvasProps): ReactNode {
 	const [isPhone, setIsPhone] = useState(false);
 	const [radius, setRadius] = useState(180);
     const ref = useRef<HTMLCanvasElement>(null);
