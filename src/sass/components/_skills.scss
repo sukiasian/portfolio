@@ -1,0 +1,24 @@
+.skills { 
+	margin-top: 2rem;
+	margin-left: 3rem;
+	color: white;
+
+	& h3 { 
+		color: white;
+	}
+}
+
+.skill { 
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0.3rem 1rem;
+	color: $color-dark;
+	display: inline-block;
+	border-radius: 25px;
+	font-weight: 700;
+	font-size: 12px;
+	min-width: 60px;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	user-select: none;
+}

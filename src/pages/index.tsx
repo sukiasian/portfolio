@@ -1,12 +1,14 @@
-import styles from "@/styles/Home.module.css";
+import AboutMe from "./home/AboutMe/AboutMe";
+import Projects from "./home/Projects/Projects";
+import Technologies from "./home/Technologies/Technologies";
 
 
 export default function Home() {
   return (
-    <>
-		<main> 
-			<div className="navbar"> hi</div>
-		</main>
-    </>
+	<>
+		<AboutMe />
+		<Technologies />
+		<Projects />
+	</>
   );
 }

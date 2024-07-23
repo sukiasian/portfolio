@@ -1,0 +1,112 @@
+
+a {
+	a:visited { 
+		text-decoration: none;
+	}
+}
+a:visited { 
+	text-decoration: none;
+	color: inherit;
+}
+
+.link--linkedin {
+	& .content {
+		width: 170px;
+		margin-left: 1rem;
+
+		@include respond(phone) { 
+			margin-left: 0;
+			margin-top: 1rem;
+		}
+		
+		.logo-container { 
+			background: url('../../assets/images/linkedin.png') no-repeat center center;
+		}
+
+		&:hover:not(:active) { 
+			background-color: transparent;
+			color: white;
+
+			.logo-container { 
+				background: url('../../assets/images/linkedin-white.png') no-repeat center center;
+			}
+		}
+	}
+}
+
+.link--github { 
+	& .content {
+		width: 170px;
+		background-color: #0277B5;
+
+		.logo-container { 
+			background: url('../../assets/images/github.png') no-repeat center center;
+		}
+
+		&:hover:not(:active) { 
+			background-color: transparent;
+			color: white;
+
+			.logo-container { 
+				background: url('../../assets/images/github-white.png') no-repeat center center;
+			}
+		}
+	}
+}
+
+.link--resume {
+	& .content { 
+		border: 2px solid $color-red !important;
+		width: 220px !important;
+		color: white !important;
+		background-color: $color-red !important;
+
+		&:hover:not(:active) {
+			background-color: transparent !important;
+
+			#download-icon { 
+				background: url('../../assets/images/downloads-red.png') no-repeat center center;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+#download-icon { 
+	width: 30px;
+	height: 30px;
+	background: url('../../assets/images/downloads.png') no-repeat center center;
+	background-size: cover;
+}
+
+.with-icon { 
+	& .content {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border: 2px solid white;
+		background-color: white;
+		padding: 0.3rem;
+		border-radius: 20px;
+		color: black;
+
+		.logo-container { 
+			width: 30px;
+			height: 30px;
+			background-size: cover;
+		}
+
+		&:hover:not(:active) { 
+			background-color: transparent;
+			color: white;
+
+			.logo-container { 
+				background-size: cover;
+			}
+		}
+	}
+}
+
+.links { 
+	margin-bottom: 1rem;
+}

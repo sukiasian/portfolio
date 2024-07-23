@@ -1,0 +1,16 @@
+.rocket-container {
+    position: relative;
+    height: 200px; 
+}
+
+.rocket {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 2s ease-in-out; 
+}
+
+.rocket.animate {
+    transform: translate(-50%, -100%); 
+}

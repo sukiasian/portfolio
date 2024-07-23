@@ -1,19 +1,36 @@
-import Image from "next/image";
-import { ReactNode } from "react";
-import profilePic from '../../assets/image.png';
-import Button from "../Button/Button";
-import CustomLink from "../Link/Link";
+import { ReactNode, useEffect, useState } from "react";
+import LinkWithIcon from "../Link/LinkWithIcon";
+import DownloadLink from "../Link/DownloadLink";
 
 export default function InfoBox(): ReactNode { 
-	return <div className="header__info">
-		<Image src={profilePic} alt="Sam" width={100} height={100} />
-		<h1> My name is Sam</h1>
-		<h2> I am a software enginner</h2>
-		<p>Open to job</p>
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
+	
+	useEffect(() => {
+		const handleResize = () => {
+			setIsSmallScreen(window.innerWidth < 900);
+		};
 
-		<div className="links">
-			<CustomLink classNames="" href="https://www.github.com/sukiasian">Discover Github</CustomLink>
-			<CustomLink classNames="" href="https://www.linkedin.com/in/sukiasian">View LinkedIn</CustomLink>
+		window.addEventListener('resize', handleResize);
+
+		return () => window.removeEventListener('resize', handleResize);
+ 	}, []);
+
+	return <div className="header__info">
+		<div className="content">
+			<h1 className="heading heading--primary"> I AM SAM SUKIASIAN</h1>
+			<h2 className="heading heading--secondary"> A SOFTWARE ENGINEER {isSmallScreen ? <br /> : null} FROM LA, CA</h2>
+
+			<div className="links">
+				<LinkWithIcon classNames='link--github' href="https://www.github.com/sukiasian">Open Github</LinkWithIcon>
+				<LinkWithIcon classNames="link--linkedin" href="https://www.linkedin.com/in/sukiasian">View LinkedIn</LinkWithIcon>
+			</div>
+			<DownloadLink classNames="link--resume" link="/Resume Latest.pdf">Download Resume</DownloadLink>
+			<div className="quote">
+				<div className="quote__icon"/>
+				<p id='quote' className="paragraph">Our brain is a tensor; its vectors are limitless.</p>
+			</div>
 		</div>
+
+		<div className="image" />
 	</div>;
 }

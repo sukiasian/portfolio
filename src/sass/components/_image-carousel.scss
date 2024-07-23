@@ -1,0 +1,47 @@
+.carousel-container { 
+	@include respond(phone) { 
+		background-color: $color-darker;
+		margin: -1rem;
+	}
+
+	display: flex;
+
+	& .button-container { 
+		padding: 1rem;
+		align-self: center;
+
+		@include respond(phone) { 
+			display: none;
+		}
+	}
+}
+
+.images-carousel {
+	width: 100vw; 
+	height: 600px;
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+
+	@include respond(tab-port) { 
+		height: 300px;
+	}
+
+	& img {
+		height: 600px;
+		width: 800px;
+		object-fit:contain;
+		padding: 1.2rem;
+
+
+		@include respond(tab-port) { 
+			width: 400px;
+			height: 300px;
+		}
+	}
+
+	&::-webkit-scrollbar { 
+		display: none;
+	}
+}

@@ -9,7 +9,7 @@ interface LinkProps {
 }
 
 export default function CustomLink({ classNames, href, children }: LinkProps): ReactNode {
-	return <Link className={`buttons ${classNames || ''}`} href={href}>
+	return <Link className={`link ${classNames || ''}`} href={href}>
 		{children}
 	</Link>;
 }

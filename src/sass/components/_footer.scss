@@ -1,0 +1,26 @@
+footer { 
+	background-color: $color-red;
+	padding: 2rem;
+	width: 100vw;
+	align-items: center;
+		display: flex;
+	flex-direction: column;
+	align-items:start;
+
+	& .contacts { 
+		width: fit-content;
+		// text-align: center;
+
+		color: white;
+	}
+}
+
+.footer { 
+	&__message { 
+		margin-bottom: 1rem;
+	}
+}
+
+#phone, #email { 
+	color: white;
+}

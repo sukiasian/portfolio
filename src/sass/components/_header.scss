@@ -1,12 +1,83 @@
 .header { 
-	&__quote { 
-		background-color: $color-darker;
-		padding: 1rem;
-		width: 100;
-	}
+	width: 100%;
 
 	&__info {
+		padding: 2rem;
 		background-color: $color-darker;
-		margin-top: 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		
+		@include respond(tab-port) { 
+			padding: 1rem;
+		}
+
+		& .image {
+			background: url('../../assets/images/I.jpg') no-repeat center center;
+			width: 300px;
+			height: 300px;
+			background-size: cover;
+			border-radius: 500px;
+
+			@include respond(tab-port) { 
+				width: 180px;
+				height: 180px;
+			}
+
+			@include respond(phone) {
+				display: none;
+			}
+		}
+
+		& .content { 
+			& h1 { 
+				font-size: 3rem;
+
+				@include respond(tab-port) { 
+					font-size: 2rem;
+				}
+			}
+
+			& h2 { 
+				font-size: 1.5rem;
+
+				@include respond(tab-port) { 
+					font-size: 1rem;
+				}
+			}
+			
+			& .quote { 
+				display: flex;
+				margin-top: 3rem;
+				width: 110%;
+				& .quote__icon { 
+					background: url('../../assets/images/quote-left.png') no-repeat center center;
+					width: 30px;
+					height: 30px;
+					background-size: cover;
+				}
+			}
+		}
 	}
+}
+
+.header__info .content .links { 
+	margin-top: 2rem;
+	display: flex;
+
+	@include respond(phone) {
+		display: block;
+	}
+}
+
+#my-image { 
+	border-radius: 500px;
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+#quote { 
+	margin-left: 1rem;
+	font-size: smaller;
 }
