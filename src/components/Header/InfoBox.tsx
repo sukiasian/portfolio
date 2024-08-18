@@ -18,7 +18,7 @@ export default function InfoBox(): ReactNode {
 	return <div className="header__info">
 		<div className="content">
 			<h1 className="heading heading--primary"> I AM SAM SUKIASIAN</h1>
-			<h2 className="heading heading--secondary"> A SOFTWARE ENGINEER {isSmallScreen ? <br /> : null} FROM LA, CA</h2>
+			<h2 className="heading heading--secondary"> SOFTWARE ENGINEER {isSmallScreen ? <br /> : null} FROM LA, CA</h2>
 
 			<div className="links">
 				<LinkWithIcon classNames='link--github' href="https://www.github.com/sukiasian">Open Github</LinkWithIcon>
