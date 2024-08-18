@@ -18,43 +18,43 @@ export default function BackendSection(): ReactNode  {
     const { activeTab } = useSelector((state: ReduxState) => state.stackCarouselReducer);
 
     return activeTab === StackTab.BACKEND ? <div className='parallax-content stack backend-stack'>
-		<div className='backend-stack__node'>
+		<div className='backend-stack__node stack__elem'>
 			<Image src={node} alt='Node.js'/>
 			<p>Node.js</p>
 		</div>
-		<div className='backend-stack__python'>
+		<div className='backend-stack__python stack__elem'>
 			<Image src={python} alt='Python'/>
 			<p>Python</p>
 		</div>
-		<div className='backend-stack__java'>
+		<div className='backend-stack__java stack__elem'>
 			<Image src={java} alt='Java'/>
 			<p>Java</p>
 		</div>
-		<div className='backend-stack__nestjs'>
+		<div className='backend-stack__nestjs stack__elem'>
 			<Image src={nestjs} alt='NestJS'/>
 			<p>NestJS</p>
 		</div>
-		<div className='backend-stack__spring'>
+		<div className='backend-stack__spring stack__elem'>
 			<Image src={spring} alt='Spring'/>
 			<p>Spring</p>
 		</div>
-		<div className='backend-stack__postgresql'>
+		<div className='backend-stack__postgresql stack__elem'>
 			<Image src={postgresql} alt='PosgreSQL'/>
 			<p>PosgreSQL</p>
 		</div>
-		<div className='backend-stack__mongodb'>
+		<div className='backend-stack__mongodb stack__elem'>
 			<Image src={mongodb} alt='MongoDB'/>
 			<p>MongoDB</p>
 		</div>
-		<div className='backend-stack__docker'>
+		<div className='backend-stack__docker stack__elem'>
 			<Image src={docker} alt='Docker'/>
 			<p>Docker</p>	
 		</div>
-		<div className='backend-stack__redis'>
+		<div className='backend-stack__redis stack__elem'>
 			<Image src={redis} alt='Redis'/>
 			<p>Redis</p>
 		</div>
-		<div className='backend-stack__kafka'>
+		<div className='backend-stack__kafka stack__elem'>
 			<Image src={kafka} alt='Kafka'/>
 			<p>Kafka</p>	
 		</div>

@@ -1,5 +1,6 @@
 import { MouseEventHandler, ReactNode, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { gsap } from 'gsap';
 import { setActiveTabIndex } from '../../../redux/actions/stackCarouselActions';
 import FrontendSection from './FrontendSection';
 import BackendSection from './BackendSection';
@@ -35,6 +36,11 @@ export default function StackCarousel(): ReactNode {
         intervalRef.current = setInterval(() => {
             dispatch(setActiveTabIndex((activeTab + 1) % developmentSections.length));
         }, refreshRateInMs);
+
+		gsap.to('.stack__elem', {
+			y: 40,
+			stagger: 0
+		});
 
         return () => {
             clearInterval(intervalRef.current);

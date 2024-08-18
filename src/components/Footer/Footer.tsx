@@ -10,7 +10,7 @@ export default function Footer(): ReactNode {
 				<a href="tel:+17473557678"><p id='phone' className="heading">+1 (747) 355 76-78</p></a>
 			</div>
 			<div className="email"> 
-				<a href="mailto:example@example.com"><p id="email">sukiasiansam@gmail.com</p></a>
+				<a href="mailto:sukiasiansam@gmail.com"><p id="email">sukiasiansam@gmail.com</p></a>
 			</div>
 		</div>
 	</footer>;
