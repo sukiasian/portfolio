@@ -121,11 +121,9 @@ export default function Canvas({ pinsAmount }: CanvasProps): ReactNode {
             style.height = "2px";
             style.borderRadius = "100px";
             style.backgroundColor = "white";
-
-			console.log(radius, 'rrrr');
 			
-            style.top = `${p2y + radius}px`;
-            style.left = `${p2x + radius}px`;
+            style.top = `${p2y + radius!}px`;
+            style.left = `${p2x + radius!}px`;
         }
     };
 

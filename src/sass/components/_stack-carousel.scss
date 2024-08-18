@@ -47,6 +47,10 @@
 		display: flex;
 		justify-content: space-around;
 		width: 400px;
+
+		@include respond(phone) { 
+			width: 220px;
+		}
 	}
 
 	&__list > * { 
