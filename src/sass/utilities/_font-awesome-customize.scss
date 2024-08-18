@@ -2,13 +2,10 @@
     margin-top: 6px;
 
     transform: scale(1.4);
-    &:hover:not([class*="--inactive"]) {
-        cursor: pointer;
-    }
+	@media (hover: hover) { 
 
-    &:active:not([class*="--inactive"]) {
-    }
-
-    &--inactive {
-    }
+		&:hover:not([class*="--inactive"]) {
+			cursor: pointer;
+		}
+	}
 }
